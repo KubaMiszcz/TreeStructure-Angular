@@ -1,4 +1,6 @@
-# TreeStructure-Angular
+# TreeStructure-Angular - *[link to working app here](http://www.kubamiszcz.hostingasp.pl/TreeStructure-Angular/)*
+
+## features
 - unlimited levels
 - add, move, remove, rename nodes
 - folding/unfolding nodes
