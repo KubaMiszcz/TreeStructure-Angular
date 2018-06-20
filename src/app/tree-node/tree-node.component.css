@@ -1,0 +1,28 @@
+button {
+  margin: 0.2em;
+  min-width: 1%;
+  /* max-height: 60%; */
+}
+
+.row {
+  /* padding: 1em; */
+  padding-left: 0.25em;
+  padding-top: 0.1em;
+  padding-right: 0.75em;
+  padding-bottom: 0.1em;
+  /* height: 3em; */
+}
+
+.name {
+  margin: 0.5em;
+  vertical-align: middle;
+}
+
+/*
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+} */

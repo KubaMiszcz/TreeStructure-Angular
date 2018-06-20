@@ -1,0 +1,12 @@
+<h2 mat-dialog-title>Rename this node</h2>
+<mat-dialog-content>
+  <form class="example-form">
+    <mat-form-field>
+      <input matInput placeholder="node name" [(ngModel)]='name' name="name">
+    </mat-form-field>
+  </form>
+</mat-dialog-content>
+
+<mat-dialog-actions>
+  <button class="mat-raised-button mat-primary btn-block" (click)="save()">Save</button>
+</mat-dialog-actions>

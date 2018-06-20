@@ -1,0 +1,42 @@
+<div class="card row">
+  <div class="row">
+    <app-spacer *ngFor=" let item of spacersNumber "></app-spacer>
+    <div class="card-body row  justify-content-between">
+      <div class="left row">
+        <button *ngIf="childrens.length>0" mat-raised-button color="primary" class="btn" (click)="toggleShowChildrens()">
+          <mat-icon *ngIf="isShowChildrens">subdirectory_arrow_left</mat-icon>
+          <mat-icon *ngIf="!isShowChildrens">subdirectory_arrow_right</mat-icon>
+        </button>
+        <button *ngIf="childrens.length<=0" mat-raised-button color="primary" class="btn">
+          <mat-icon>radio_button_unchecked</mat-icon>
+        </button>
+
+
+        <!-- <button mat-raised-button color="primary" class="btn">{{childrens.length}}</button> -->
+        <h5 class="card-title text-left left name">
+          <!-- <mat-icon *ngIf="childrens.length>0">subdirectory_arrow_right</mat-icon>
+          <mat-icon *ngIf="childrens.length<=0">radio_button_unchecked</mat-icon> -->
+          {{name}} </h5>
+      </div>
+
+      <div class="right row">
+        <button mat-raised-button color="primary" class="btn" (click)="openDialogRenameChild()">
+          <mat-icon>edit</mat-icon>
+        </button>
+        <button mat-raised-button color="primary" class="btn" (click)="moveChild()">
+          <mat-icon>swap_horiz</mat-icon>
+        </button>
+        <button mat-raised-button color="primary" class="btn" (click)="addChild()">
+          <mat-icon>add_box</mat-icon>
+        </button>
+        <button mat-raised-button color="warn" class="btn" (click)="deleteChild()">
+          <mat-icon>delete</mat-icon>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div *ngIf="isShowChildrens">
+  <app-tree-node *ngFor=" let item of childrens " [name]="item.name" [level]="item.level" [childrens]="item.childrens"  (childDelete)="onChildDelete($event)"></app-tree-node>
+</div>
