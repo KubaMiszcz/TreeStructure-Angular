@@ -1,5 +1,13 @@
-# TreeStructureAngular
+# TreeStructure-Angular
+- unlimited levels
+- add, move, remove, rename nodes
+- folding/unfolding nodes
 
+## TODO:
+- add backend - .NET, MVC, WebAPI
+- MSSQL database
+
+--- 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.8.
 
 ## Development server
